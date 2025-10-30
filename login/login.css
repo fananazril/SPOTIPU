@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-dark: #0e0e10;
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --text-main: #e8ecff;
+  --text-sub: #b0b4c3;
+  --accent: #46a0ff;
+  --danger: #ff6b6b;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: var(--text-main);
+  background: url('../assets/TEXTURE.png');
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.logo-img {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    width: 200px;
+    height: auto;
+}
+
+/* container utama form login */
+.login-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.login-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: var(--text-main);
+}
+
+.error-message {
+    background-color: rgba(255, 107, 107, 0.2);
+    color: var(--danger);
+    border: 1px solid rgba(255, 107, 107, 0.5);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-sub);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-main);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.login-button {
+    background: #8a4fff;            
+    color: #ffffff;
+    padding: 18px 30px;              
+    border: none;
+    border-radius: 24px;             
+    cursor: pointer;
+    width: 60%;                      
+    font-size: 1.25rem;               
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 16px rgba(138, 79, 255, 0.4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-button:hover {
+    background: #6e33d6;              
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(110, 51, 214, 0.5);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid var(--glass-border);
+    color: var(--text-sub);
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.6rem 0;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    z-index: 50;
+}
+
+.footer:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.08);
+}

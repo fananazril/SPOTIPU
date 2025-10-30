@@ -1,0 +1,46 @@
+<?php
+session_start();
+
+// fungsi cek sesi per user 
+if (isset($_SESSION['username'])) {
+    header("Location: /SPOTIPU/beranda/home.php"); // syntax path
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOTIPU - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo"> <img src="/SPOTIPU/assets/LOGO.png" alt="logo" class="logo-img"></div>
+        <h2>Login</h2>
+
+        <?php if (isset($_GET['error'])): ?>
+            <p class="error-message"><?php echo htmlspecialchars($_GET['error']); ?></p>
+        <?php endif; ?>
+
+        <form action="/SPOTIPU/action/user/proses_login.php" method="POST"> <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">LOGIN</button>
+        </form>
+        <p class="register-link">
+            Belum punya akun? <a href="/SPOTIPU/register/register.php"> Daftar di sini </a>
+        </p>
+    </div>
+
+    <footer class="footer"> <!-- FOOTER -->
+         <p>© 2025 SPOTIPU — Buat Kamu Yang Suka Digidaw.</p>
+    </footer>
+</body>
+</html>
