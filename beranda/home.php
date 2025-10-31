@@ -90,7 +90,7 @@ if ($conn) {
                 </div>
                 <div class="sort-buttons">
                     <button type="submit" class="sort-submit-btn">Urutkan</button>
-                    <button type="button" id="addSongBtn">Tambah Lagu</button>
+                    <button type="button" class="addsng-btn" id="addSongBtn">Tambah Lagu</button>
                 </div>
             </form>
         </div>

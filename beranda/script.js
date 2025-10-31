@@ -1,6 +1,6 @@
 // === Elemen Modal ===
-var addsng = document.getElementById("addSong");
-var editsng = document.getElementById("editSong");
+var addModal = document.getElementById("addSongModal");
+var editModal = document.getElementById("editSong");
 var btnOpenAdd = document.getElementById("addSongBtn");
 var closeButtons = document.querySelectorAll(".close-btn");
 
@@ -9,7 +9,7 @@ if (btnOpenAdd && addModal) {
         addModal.style.display = "block";
     }
 } else {
-    if (!addsng) console.error("Modal element with ID 'addSong' not found.");
+    if (!addModal) console.error("Modal element with ID 'addSong' not found.");
     if (!btnOpenAdd) console.error("Button element with ID 'addSongBtn' not found.");
 }
 var editLinks = document.querySelectorAll(".edit-link");

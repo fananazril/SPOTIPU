@@ -163,17 +163,33 @@ body {
     padding: 12px 15px;
     border: none;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgb(22, 0, 164);
     color: #eef2ff;
     cursor: pointer;
     transition: all 0.2s ease;
     font-weight: 500;
 }
 
-.sort-submit-btn:hover, #addSongBtn:hover {
-    background: rgba(255, 255, 255, 0.15);
+.sort-submit-btn:hover {
+    background: rgb(13, 0, 95);
     transform: translateY(-2px);
 } 
+
+.addsng-btn {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(18, 152, 22);
+    color: #eef2ff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.addsng-btn:hover {
+    background: rgb(18, 152, 22);
+    transform: translateY(-2px);
+}
 
 /* info pencarian */
 .search-info {
@@ -371,7 +387,7 @@ body {
     margin-top: 15px;
     border: none;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(134, 0, 192, 0.881);
     color: #eef2ff;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -379,7 +395,7 @@ body {
 }
 
 .modal-content button[type="submit"]:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(112, 0, 129, 0.833);
     transform: translateY(-2px);
 }
 
